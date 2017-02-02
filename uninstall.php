@@ -1,4 +1,8 @@
 <?php
+
+if (!defined('WP_UNINSTALL_PLUGIN')) {
+    exit;
+}
 /**
  * Created by PhpStorm.
  * User: jesus

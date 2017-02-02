@@ -27,6 +27,7 @@ class CorpAdminAutoload
         }
     }
 }
+
 CorpAdminAutoload::getInstance();
 /**
  * Created by PhpStorm.

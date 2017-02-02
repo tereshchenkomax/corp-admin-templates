@@ -23,14 +23,14 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 require_once plugin_dir_path(__FILE__) . '/config-path.php';
-require_once CORPADMINAUTOLOAD_PlUGIN_DIR.'/includes/common/CorpAdminTemplates.php';
+require_once CORPADMINAUTOLOAD_PlUGIN_DIR.'/includes/common/CorpAdminAutoload.php';
 require_once CORPADMINAUTOLOAD_PlUGIN_DIR.'/includes/CorpAdminTemplates.php';
 
 
 register_activation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'deactivation' ) );
 //продумать и добавить функцию
-add_action('admin_menu', '');
+//add_action('admin_menu', '');
 
 
 ?>
