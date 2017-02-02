@@ -1,31 +1,40 @@
 <?php
-function plugin_admin_menu()
+
+namespace includes;
+
+class CorpAdminTemplates
 {
-    add_options_page('Total Old Revisions Cleaner', 'Total Old Revisions Cleaner', 8, basename(__FILE__), 'admin_form');
-}
-<?php
-function admin_form()
-{
-    ?>
-    <div class="wrap>;
- <h2>Total Old Revisions Cleaner</h2>
-    <hr />
-    <form method="post" onsubmit="if (!confirm('Вы уверены?')) {return false}" >
-    <input type="checkbox" name="clean" /&amp;gt;
-    <label>Удалить все старые редакции записей страниц</label>
-    <input type="submit" name="ok" value="Ok" />
-    </form>
-    </div>
-    <?php
-}//Конец admin_form
-function plugin_admin_menu()
-{
-    add_options_page('Total Old Revisions Cleaner', 'Total Old Revisions Cleaner', 8, basename(__FILE__), 'admin_form');
+    private static $instance = null;
+    private function __construct() {
+
+    }
+    public static function getInstance() {
+
+        if ( null == self::$instance ) {
+            self::$instance = new self;
+        }
+
+        return self::$instance;
+
+    }
+
+    static public function activation()
+    {
+        // debug.log
+        error_log('plugin '.CORPADMINAUTOLOAD_PlUGIN_NAME.' activation');
+    }
+
+    static public function deactivation()
+    {
+        // debug.log
+        error_log('plugin '.CORPADMINAUTOLOAD_PlUGIN_NAME.' deactivation');
+    }
+
 }
 
-add_action('admin_menu', 'plugin_admin_menu');
+CorpAdminTemplates::getInstance();
 
-?>
+
 /**
  * Created by PhpStorm.
  * User: jesus
