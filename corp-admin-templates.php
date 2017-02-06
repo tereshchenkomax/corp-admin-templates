@@ -4,10 +4,13 @@
  Description: Corp Admin Templates
  Version: 1.0.0
  Author: Tereshchenko Max
- Author URI:
- Plugin URI: http://github.com/
-*/
-/*  Copyright 2017  Tereshchenko Max  (email: tereshchenkomax@gmail.com)
+ Author URI: https://github.com/tereshchenkomax
+ Plugin URI: https://github.com/tereshchenkomax/corp-admin-templates
+ Text Domain: corp-admin-templates
+ Domain Path: /languages/
+
+  Copyright 2017  Tereshchenko Max  (email: tereshchenkomax@gmail.com)
+
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation; either version 2 of the License, or
@@ -23,14 +26,15 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 require_once plugin_dir_path(__FILE__) . '/config-path.php';
-require_once CORPADMINAUTOLOAD_PlUGIN_DIR.'/includes/common/CorpAdminAutoload.php';
-require_once CORPADMINAUTOLOAD_PlUGIN_DIR.'/includes/CorpAdminTemplates.php';
+require_once CORPADMINTEMPLATES_PlUGIN_DIR.'/includes/common/CorpAdminAutoload.php';
+require_once CORPADMINTEMPLATES_PlUGIN_DIR.'/includes/CorpAdminTemplates.php';
 
 
 register_activation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'deactivation' ) );
-//продумать и добавить функцию
-//add_action('admin_menu', '');
 
 
-?>
+
+//add_action('plugins_loaded', function(){ error_log(__('Hello', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN)); }, 100);
+
+

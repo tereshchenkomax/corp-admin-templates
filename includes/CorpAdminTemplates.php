@@ -2,11 +2,13 @@
 
 namespace includes;
 
+use includes\common\CorpAdminLoader;
+
 class CorpAdminTemplates
 {
     private static $instance = null;
     private function __construct() {
-
+        CorpAdminLoader::getInstance();
     }
     public static function getInstance() {
 
@@ -21,13 +23,13 @@ class CorpAdminTemplates
     static public function activation()
     {
         // debug.log
-        error_log('plugin '.CORPADMINAUTOLOAD_PlUGIN_NAME.' activation');
+        error_log('plugin '.CORPADMINTEMPLATES_PlUGIN_NAME.' activation');
     }
 
     static public function deactivation()
     {
         // debug.log
-        error_log('plugin '.CORPADMINAUTOLOAD_PlUGIN_NAME.' deactivation');
+        error_log('plugin '.CORPADMINTEMPLATES_PlUGIN_NAME.' deactivation');
     }
 
 }

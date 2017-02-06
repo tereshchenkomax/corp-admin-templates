@@ -19,7 +19,7 @@ class CorpAdminAutoload
      * @param $className
      */
     public function autoloadNamespace($className){
-        $fileClass = CORPADMINAUTOLOAD_PlUGIN_DIR.'/'.str_replace("\\","/",$className).'.php';
+        $fileClass = CORPADMINTEMPLATES_PlUGIN_DIR.'/'.str_replace("\\","/",$className).'.php';
         if (file_exists($fileClass)) {
             if (!class_exists($fileClass, FALSE)) {
                 require_once $fileClass;
@@ -27,7 +27,6 @@ class CorpAdminAutoload
         }
     }
 }
-
 CorpAdminAutoload::getInstance();
 /**
  * Created by PhpStorm.
