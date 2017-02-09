@@ -28,6 +28,7 @@ class CorpAdminAutoload
     }
 }
 CorpAdminAutoload::getInstance();
+CorpAdminLoaderScript::getInstance();
 /**
  * Created by PhpStorm.
  * User: jesus

@@ -33,6 +33,14 @@ require_once CORPADMINTEMPLATES_PlUGIN_DIR.'/includes/CorpAdminTemplates.php';
 register_activation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'deactivation' ) );
 
+function add_custom_admin_theme(){
+    wp_admin_css_color(
+        'corp-admin-css',__('Admin Color Scheme'),
+        admin_url("css/corp-admin-css.css"),
+        array( '#103154', '#ffffff', '#be8643', '#f1dd7d' )
+    );
+};
+add_action('admin_init','add_custom_admin_theme');
 
 
 //add_action('plugins_loaded', function(){ error_log(__('Hello', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN)); }, 100);

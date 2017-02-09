@@ -12,20 +12,18 @@ class CorpAdminAction
         //Прикрепим функцию к событию 'my_action'
         add_action('my_action', array(&$this, 'myActionFunction'));
         // Прикрепим функцию к событию 'my_hook'
-        add_action('my_hook', function(){ error_log(1); });
-        add_action('my_hook', function(){ error_log(2); });
-        add_action('my_hook', function(){ error_log(3); });
-        add_action('my_hook', function(){ error_log(4); }, 15);
-        add_action('my_hook', function(){ error_log(5); }, 10); // можно не указывать 10 - по умолчанию
-        add_action('my_hook', function(){ error_log(6); }, 5);
-
-        do_action('my_hook');
-
         add_action('my_action', array(&$this, 'myActionFunctionAdditionalParameter'), 10, 3);
-
+//        add_action('admin_init','add_custom_admin_theme');
         add_action('plugins_loaded', function(){ error_log(__('Hello', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN)); }, 100);
-
+        do_action('my_hook');
     }
+//    public function add_custom_admin_theme(){
+//        wp_admin_css_color(
+//            'corp-admin-css',__('Admin Color Scheme'),
+//            admin_url("css/corp-admin-css.css"),
+//            array( '#103154', '#ffffff', '#be8643', '#f1dd7d' )
+//        );
+//    }
     public static function newInstance(){
         $instance = new self;
         return $instance;
