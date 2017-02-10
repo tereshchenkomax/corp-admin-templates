@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 
-abstract class StepByStepBaseAdminMenuController implements StepByStepIСreatorInstance
+abstract class CorpAdminAdminMenuController implements CorpAdminCreatorInstance
 {
     public function __construct(){
         /*

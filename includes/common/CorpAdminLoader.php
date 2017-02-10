@@ -8,6 +8,10 @@
 
 namespace includes\common;
 
+use includes\controllers\admin\menu\CorpAdminAdminMenuController;
+use includes\controllers\admin\menu\CorpAdminMainAdminMenuController;
+use includes\controllers\admin\menu\CorpAdminMainAdminSubMenuController;
+use includes\controllers\admin\menu\CorpAdminMyPluginsMenuController;
 use includes\example\CorpAdminAction;
 use includes\example\CorpAdminFilter;
 
@@ -42,6 +46,13 @@ class CorpAdminLoader
      * Метод будет срабатывать когда вы находитесь в Админ панеле. Загрузка классов для Админ панели
      */
     public function admin(){
+
+
+        CorpAdminMainAdminMenuController::newInstance();
+
+        CorpAdminMainAdminSubMenuController::newInstance();
+
+        CorpAdminMyPluginsMenuController::newInstance();
 
     }
 

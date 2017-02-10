@@ -9,23 +9,23 @@
 namespace includes\controllers\admin\menu;
 
 
-class StepByStepMainAdminSubMenuController extends StepByStepBaseAdminMenuController
+class CorpAdminMainAdminSubMenuController extends CorpAdminAdminMenuController
 {
 
     public function action()
     {
         // TODO: Implement action() method.
         $pluginPage = add_submenu_page(
-            STEPBYSTEP_PlUGIN_TEXTDOMAIN,
+            CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN,
             _x(
-                'Sub Step By Step',
-                'admin menu page' ,
-                STEPBYSTEP_PlUGIN_TEXTDOMAIN
+                'Sub Corp Admin Templates',
+                'admin sub menu page' ,
+                CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN
             ),
             _x(
-                'Sub Step By Step',
-                'admin menu page' ,
-                STEPBYSTEP_PlUGIN_TEXTDOMAIN
+                'Sub Corp Admin Templates',
+                'admin sub menu page' ,
+                CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN
             ),
             'manage_options',
             'step_by_step_control_sub_menu',
@@ -35,7 +35,7 @@ class StepByStepMainAdminSubMenuController extends StepByStepBaseAdminMenuContro
     public function render()
     {
         // TODO: Implement render() method.
-        _e("Hello world sub menu", STEPBYSTEP_PlUGIN_TEXTDOMAIN);
+        _e("Sub Corp Admin Templates", SCORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
     }
 
     public static function newInstance()

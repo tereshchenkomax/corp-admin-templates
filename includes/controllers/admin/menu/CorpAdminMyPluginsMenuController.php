@@ -9,15 +9,15 @@
 namespace includes\controllers\admin\menu;
 
 
-class StepByStepMyPluginsMenuController extends StepByStepBaseAdminMenuController
+class CorpAdminMyPluginsMenuController extends CorpAdminAdminMenuController
 {
     public function action()
     {
         // TODO: Implement action() method.
 
         $pluginPage = add_plugins_page(
-            __('Sub plugins Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
-            __('Sub plugins Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
+            __('Sub plugins Corp Admin Templates', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN),
+            __('Sub plugins Corp Admin Templates', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN),
             'read',
             'step_by_step_control_sub_plugins_menu',
             array(&$this, 'render')
@@ -27,7 +27,8 @@ class StepByStepMyPluginsMenuController extends StepByStepBaseAdminMenuControlle
     public function render()
     {
         // TODO: Implement render() method.
-        _e("Hello this page Plugins", STEPBYSTEP_PlUGIN_TEXTDOMAIN);
+        _e("Hello this is CORPADMINTEMPLATES page Plugins ", CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
+
     }
 
     public static function newInstance()

@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 
-class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuController
+class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
 {
 
     public function action()
@@ -21,19 +21,19 @@ class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuControlle
          */
         $pluginPage = add_menu_page(
             _x(
-                'Step By Step',
+                'Corp Admin Templates',
                 'admin menu page' ,
-                STEPBYSTEP_PlUGIN_TEXTDOMAIN
+                CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN
             ),
             _x(
-                'Step By Step',
+                'Corp Admin Templates',
                 'admin menu page' ,
-                STEPBYSTEP_PlUGIN_TEXTDOMAIN
+                CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN
             ),
             'manage_options',
-            STEPBYSTEP_PlUGIN_TEXTDOMAIN,
+            CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN,
             array(&$this,'render'),
-            STEPBYSTEP_PlUGIN_URL .'assets/images/main-menu.png'
+            CORPADMINTEMPLATES_PlUGIN_URL .'assets/images/main-menu.png',8
         );
     }
 
@@ -42,8 +42,12 @@ class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuControlle
      */
     public function render()
     {
+        //require_once (CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN . '/includes/controllers/admin/page/main-admin-menu.php');
         // TODO: Implement render() method.
-        _e("Hello world", STEPBYSTEP_PlUGIN_TEXTDOMAIN);
+        _e("Corp Admin Templates", CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
+
+        echo '<br /><h1 >' . get_admin_page_title() . '</h1>';
+        
     }
 
     public static function newInstance()

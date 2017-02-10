@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 
-interface StepByStepIСreatorInstance
+interface CorpAdminCreatorInstance
 {
     public static function newInstance();
 }
