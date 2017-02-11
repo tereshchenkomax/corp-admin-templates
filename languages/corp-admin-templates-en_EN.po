@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: corp-admin-templates\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-05 22:41+0200\n"
+"POT-Creation-Date: 2017-02-11 13:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: tereshchenkomax <tereshchenkomax@gmail.com>\n"
@@ -24,17 +24,50 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: corp-admin-templates.php:38 includes/example/CorpAdminAction.php:26
-msgid "Hello"
-msgstr "Hello"
+#: corp-admin-templates.php:38
+msgid "Admin Color Scheme"
+msgstr ""
 
 #: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:24
 #: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:29
 msgctxt "admin menu page"
-msgid "Sub Corp Admin Templates"
-msgstr "Sub Corp Admin Templates"
+msgid "Corp Admin Templates"
+msgstr ""
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:47
+msgid "Corp Admin Templates"
+msgstr ""
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:50
+msgctxt "admin menu page"
+msgid "This my first plugin"
+msgstr ""
+
 #: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:21
 #: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:26
 msgctxt "admin sub menu page"
 msgid "Sub Corp Admin Templates"
 msgstr "Sub Corp Admin Templates"
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:38
+msgid "Sub Corp Admin Templates"
+msgstr "Sub Corp Admin Templates"
+
+#: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:19
+#: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:20
+msgid "Sub plugins Corp Admin Templates"
+msgstr ""
+
+#: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:30
+msgid "Hello this is CORPADMINTEMPLATES page Plugins "
+msgstr ""
+
+#: includes/example/CorpAdminAction.php:17
+msgid "Hello"
+msgstr "Hello"
+
+#~ msgid "This my first plugin"
+#~ msgstr "This my first plugin"
+
+#~ msgid "Check it on"
+#~ msgstr "Check it on"

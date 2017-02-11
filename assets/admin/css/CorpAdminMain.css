@@ -1,10 +1,19 @@
 
 /*Admin menu*/
+.cat-main-menu{
+    display: block;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px auto;
+    color: #43dcff;
+}
 .cat-main-menu-title{
     font-size: 5.3rem;
     line-height: 2.5rem;
     margin: 0;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #0D75AF;
     content: "";
     height: 10px;
@@ -13,6 +22,9 @@
     margin-bottom: 3px;
 }
 /*Sub Admin*/
-.cat-sub-main-menu-title{
-    text-align: center;
+.cat-sub-menu{
+    text-align: left;
+}
+.cat-sub-menu-title{
+    text-align: left;
 }

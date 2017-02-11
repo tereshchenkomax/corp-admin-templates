@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: corp-admin-templates\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-05 22:41+0200\n"
+"POT-Creation-Date: 2017-02-11 13:30+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: tereshchenkomax <tereshchenkomax@gmail.com>\n"
@@ -25,9 +25,9 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: corp-admin-templates.php:38 includes/example/CorpAdminAction.php:26
-msgid "Hello"
-msgstr "Приветики 11"
+#: corp-admin-templates.php:38
+msgid "Admin Color Scheme"
+msgstr ""
 
 #: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:24
 #: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:29
@@ -35,8 +35,47 @@ msgctxt "admin menu page"
 msgid "Corp Admin Templates"
 msgstr "Корп Шаблоны Админ-панели"
 
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:47
+msgid "Corp Admin Templates"
+msgstr "Корп Шаблоны Админ-панели"
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:50
+msgctxt "admin menu page"
+msgid "This my first plugin"
+msgstr "Это мой первый плагин"
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:51
+msgctxt "admin menu page"
+msgid "Check it on"
+msgstr "Зацените"
+
 #: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:21
 #: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:26
 msgctxt "admin sub menu page"
 msgid "Sub Corp Admin Templates"
 msgstr "Подменю Корп Шаблоны Админ-панели"
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:38
+msgid "Sub Corp Admin Templates"
+msgstr "Подменю Корп Шаблоны Админ-панели"
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:41
+msgctxt "admin sub menu page"
+msgid "The submenu text"
+msgstr "Текст подменю"
+
+#: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:19
+#: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:20
+msgid "Sub plugins Corp Admin Templates"
+msgstr "Sub плагинов Corp Административные шаблоны"
+
+#: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:30
+msgid "Hello this is CORPADMINTEMPLATES page Plugins "
+msgstr "Привет это CORPADMINTEMPLATES страница Плагины"
+
+#: includes/example/CorpAdminAction.php:17
+msgid "Hello"
+msgstr "Приветики 11"
+
+#~ msgid "This my first plugin"
+#~ msgstr "Это мой первый плагин"
