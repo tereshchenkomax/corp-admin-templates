@@ -46,8 +46,8 @@ class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
         // TODO: Implement render() method.
         _e("Corp Admin Templates", CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
 
-        echo '<br /><h1 >' . get_admin_page_title() . '</h1>';
-        
+        echo '<br /><h1 class="cat-main-menu-title">' . get_admin_page_title() . '</h1>';
+
     }
 
     public static function newInstance()

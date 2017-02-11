@@ -36,6 +36,7 @@ class CorpAdminMainAdminSubMenuController extends CorpAdminAdminMenuController
     {
         // TODO: Implement render() method.
         _e("Sub Corp Admin Templates", SCORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
+        echo '<br /><h1 class="cat-sub-main-menu-title">' . get_admin_page_title() . '</h1>';
     }
 
     public static function newInstance()
