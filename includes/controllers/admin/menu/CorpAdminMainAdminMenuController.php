@@ -7,7 +7,8 @@
  */
 
 namespace includes\controllers\admin\menu;
-
+use includes\common\CorpAdminRequestApi;
+use includes\models\site\CorpAdminSampleShortcodesModel;
 
 class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
 {
@@ -44,6 +45,17 @@ class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
     {
         //require_once (CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN . '/includes/controllers/admin/page/main-admin-menu.php');
         // TODO: Implement render() method.
+//        var_dump(wp_remote_get('http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com'));
+//        $responce = wp_remote_get('http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com');
+//        wp_remote_retrieve_body($responce);
+//        $headers = $responce['headers'];
+//        echo $headers['content-type'];
+
+        $requestAPI = CorpAdminSampleShortcodesModel::newInstance();
+        var_dump($requestAPI->getYouTube('http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com'));
+
+
+
         _e("Corp Admin Templates", CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
         echo '<div class="cat-main-menu">';
         echo '<br /><h1 class="cat-main-menu-title">' . get_admin_page_title() . '</h1>';

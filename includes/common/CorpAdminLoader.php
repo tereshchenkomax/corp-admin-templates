@@ -12,6 +12,8 @@ use includes\controllers\admin\menu\CorpAdminAdminMenuController;
 use includes\controllers\admin\menu\CorpAdminMainAdminMenuController;
 use includes\controllers\admin\menu\CorpAdminMainAdminSubMenuController;
 use includes\controllers\admin\menu\CorpAdminMyPluginsMenuController;
+use includes\controllers\site\shortcodes\CorpAdminSampleShortcodeController;
+use includes\controllers\site\shortcodes\CorpAdminShortcodeController;
 use includes\example\CorpAdminAction;
 use includes\example\CorpAdminFilter;
 
@@ -60,6 +62,7 @@ class CorpAdminLoader
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
      */
     public function site(){
+        CorpAdminSampleShortcodeController::newInstance();
 
     }
 

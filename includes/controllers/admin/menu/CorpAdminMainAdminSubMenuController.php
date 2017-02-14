@@ -28,7 +28,7 @@ class CorpAdminMainAdminSubMenuController extends CorpAdminAdminMenuController
                 CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN
             ),
             'manage_options',
-            'step_by_step_control_sub_menu',
+            'corp_admin_control_sub_menu',
             array(&$this, 'render'));
     }
 

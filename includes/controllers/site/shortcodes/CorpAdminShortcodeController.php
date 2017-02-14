@@ -1,0 +1,47 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: jesus
+ * Date: 11.02.2017
+ * Time: 14:57
+ */
+
+namespace includes\controllers\site\shortcodes;
+
+
+abstract class CorpAdminShortcodeController
+{
+    public function __construct(){
+        add_action( 'wp_loaded',  array( &$this, 'initShortcode') );
+    }
+    abstract public function initShortcode();
+
+    /**
+     * Функция обработки шоткода
+     * Функция указанная в параметре $func, получает 3 параметра, каждый из них может быть передан,
+     * а может нет:
+     * $atts(массив)
+     *      Ассоциативный массив атрибутов указанных в шоткоде. По умолчанию пустая строка - атрибуты
+     *      не переданы.
+     *      По умолчанию: ''
+     * $content(строка)
+     *      Текст шоткода, когда используется закрывающая конструкция шотркода: [foo]текст шорткода[/foo]
+     *      По умолчанию: ''
+     * $tag(строка)
+     *      Тег шорткода. Может пригодится для передачи в доп. функции. Пр: если шорткод - [foo],
+     *      то тег будет - foo.
+     *      По умолчанию: текущий тег
+     * @param array $atts
+     * @param string $content
+     * @param string $tag
+     * @return mixed
+     */
+    abstract public function action($atts = array(), $content = '', $tag = '');
+
+    /**
+     * Функция, отвечающая за вывод обработаной информации шорткодом
+     * @param $data
+     * @return mixed
+     */
+    abstract public function render($data);
+}
