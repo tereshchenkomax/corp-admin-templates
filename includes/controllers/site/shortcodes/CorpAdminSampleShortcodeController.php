@@ -61,8 +61,8 @@ class CorpAdminSampleShortcodeController extends CorpAdminShortcodeController im
          */
         $atts = shortcode_atts( array(
             ), $atts, $tag );
-        $reqestAPI = CorpAdminRequestApi::getInstance();
-        $data = $reqestAPI->getPinterest();
+        $requestAPI = CorpAdminRequestApi::getInstance();
+        $data = $requestAPI->getPinterest();
 //        $data = $this->model->getYouTube();
         if ($data == false) return false;
         return $this->render($data).'Shortcode here';

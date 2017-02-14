@@ -51,9 +51,6 @@ class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
 //        $headers = $responce['headers'];
 //        echo $headers['content-type'];
 
-        $requestAPI = CorpAdminSampleShortcodesModel::newInstance();
-        var_dump($requestAPI->getYouTube('http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com'));
-
 
 
         _e("Corp Admin Templates", CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
@@ -64,6 +61,15 @@ class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
                     .'<a href="https://github.com/tereshchenkomax/corp-admin-templates" target="_blank">Github</a>.
 		</h3>';
 
+        echo 'Pinterest Test';
+        $requestAPI = CorpAdminRequestApi::getInstance();
+        $pins = $requestAPI->getPinterest();
+        var_dump($pins['url']);
+        echo '<ul>';
+        foreach( $pins['data'] as $pin ) {
+            echo '<li><a href="' . $pin['url'] . '">' . $pin['note']. '</a></li>';
+        }
+        echo '</ul>';
     }
 
     public static function newInstance()

@@ -16,21 +16,21 @@ class CorpAdminSampleShortcodesModel implements CorpAdminCreatorInstance
 
     }
 
-    public function getData($currency, $origin, $destination, $month = ""){
+    public function getData(){
         $cacheKey = "";
         $data = array();
-        $cacheKey = $this->getYouTube();
+        $cacheKey = $this->getPinterest();
         if ( false === ($data = get_transient($cacheKey))) {
-            $reqestAPI = CorpAdminRequestApi::getInstance();
-            $data = $reqestAPI->requestAPI();
+            $requestAPI = CorpAdminRequestApi::getInstance();
+            $data = $requestAPI->getPinterest();
             set_transient($cacheKey, $data, 100);
         }
 
         return $data;
     }
 
-    public function getYouTube(){
-        return "http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com";
+    public function getPinterest(){
+        return "https://api.pinterest.com/v1/boards/marticz/home-office/pins/?access_token=AQ6JbH3UlMbdjl-qPXGTCB4vsRItFKNGcD8gRBZDyWe0SoA2CgAAAAA";
     }
 
     public static function newInstance()
