@@ -48,32 +48,8 @@ class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
      */
     public function render()
     {
-        //require_once (CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN . '/includes/controllers/admin/page/main-admin-menu.php');
-        // TODO: Implement render() method.
-//        var_dump(wp_remote_get('http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com'));
-//        $responce = wp_remote_get('http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com');
-//        wp_remote_retrieve_body($responce);
-//        $headers = $responce['headers'];
-//        echo $headers['content-type'];
-
-
-
-        _e("Corp Admin Templates", CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN);
-        echo '<div class="cat-main-menu">';
-        echo '<br /><h1 class="cat-main-menu-title">' . get_admin_page_title() . '</h1>';
-        echo '<h3>'. _x("This my first plugin",'admin menu page', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN). ' '
-                    . _x("Check it on",'admin menu page', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN). ' '
-                    .'<a href="https://github.com/tereshchenkomax/corp-admin-templates" target="_blank">Github</a>.
-		</h3>';
-
         $pathView = CORPADMINTEMPLATES_PlUGIN_DIR."/includes/views/admin/menu/CorpAdminMainAdminMenu.view.php";
         $this->loadView($pathView);
-
-//        echo 'Pinterest Test';
-//        $requestAPI = CorpAdminRequestApi::getInstance();
-//        $pins = $requestAPI->getPinterest();
-//        var_dump($pins['data']);
-
     }
 
     public static function newInstance()

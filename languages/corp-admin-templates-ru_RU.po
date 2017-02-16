@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: corp-admin-templates\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-11 13:30+0200\n"
+"POT-Creation-Date: 2017-02-16 22:52+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: tereshchenkomax <tereshchenkomax@gmail.com>\n"
@@ -29,22 +29,27 @@ msgstr ""
 msgid "Admin Color Scheme"
 msgstr ""
 
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:24
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:29
+#: includes/controllers/admin/menu/CorpAdminAdminMenuController.php:36
+#, php-format
+msgid "(View %s not found)"
+msgstr ""
+
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:30
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:35
 msgctxt "admin menu page"
 msgid "Corp Admin Templates"
 msgstr "Корп Шаблоны Админ-панели"
 
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:47
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:61
 msgid "Corp Admin Templates"
 msgstr "Корп Шаблоны Админ-панели"
 
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:50
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:64
 msgctxt "admin menu page"
 msgid "This my first plugin"
 msgstr "Это мой первый плагин"
 
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:51
+#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:65
 msgctxt "admin menu page"
 msgid "Check it on"
 msgstr "Зацените"
@@ -76,6 +81,26 @@ msgstr "Привет это CORPADMINTEMPLATES страница Плагины"
 #: includes/example/CorpAdminAction.php:17
 msgid "Hello"
 msgstr "Приветики 11"
+
+#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:42
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:43
+msgctxt "admin menu page"
+msgid "This is the 1st options section. Have fun"
+msgstr "Это первый раздел Параметры. Веселитесь"
+
+#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:50
+msgid "Token"
+msgstr "Токен"
+
+#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:57
+msgid "Wish to plugin creator"
+msgstr "Пожелание создателю плагина"
+
+#~ msgid "Account"
+#~ msgstr "Аккаунт"
 
 #~ msgid "This my first plugin"
 #~ msgstr "Это мой первый плагин"

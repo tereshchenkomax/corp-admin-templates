@@ -23,15 +23,8 @@ class CorpAdminMainAdminMenuModel implements CorpAdminCreatorInstance
         error_log(1);
     }
 
-    /**
-     * Регистрировать опции
-     * Добавлять поля опции
-     * Добавлять секции опции
-
-     */
     public function createOption()
     {
-        error_log(2);
         // register_setting( $option_group, $option_name, $sanitize_callback );
         // Регистрирует новую опцию
         register_setting('CorpAdminSettings', CORPADMINTEMPLATES_PlUGIN_OPTION_NAME, array(&$this, 'saveOption'));
@@ -39,8 +32,8 @@ class CorpAdminMainAdminMenuModel implements CorpAdminCreatorInstance
         // Добавление секции опций
         add_settings_section(
             'corp_admin_account_section_id',
-            __('Account', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN),
-            _x("This is the 1st options section. Have fun",'admin menu page', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN),
+            __('Settings', CORPADMINTEMPLATES_PlUGIN_TEXTDOMAIN),
+            '',
             'corp-admin-templates'
         );
         // add_settings_field( $id, $title, $callback, $page, $section, $args );
@@ -64,7 +57,6 @@ class CorpAdminMainAdminMenuModel implements CorpAdminCreatorInstance
 
     public function tokenField(){
         $option = get_option(CORPADMINTEMPLATES_PlUGIN_OPTION_NAME);
-
         ?>
         <input type="text"
                name="<?php echo CORPADMINTEMPLATES_PlUGIN_OPTION_NAME; ?>[account][token]"
@@ -73,7 +65,6 @@ class CorpAdminMainAdminMenuModel implements CorpAdminCreatorInstance
     }
     public function wishField(){
         $option = get_option(CORPADMINTEMPLATES_PlUGIN_OPTION_NAME);
-//        var_dump($option);
         ?>
         <input type="text"
                name="<?php echo CORPADMINTEMPLATES_PlUGIN_OPTION_NAME; ?>[account][wish]"
