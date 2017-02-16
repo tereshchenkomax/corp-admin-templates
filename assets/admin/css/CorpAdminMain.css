@@ -2,15 +2,15 @@
 /*Admin menu*/
 .cat-main-menu{
     display: block;
-    font-size: 3rem;
-    line-height: 3rem;
-    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2rem;
+    
     text-align: center;
     margin: 20px auto;
     color: #43dcff;
 }
 .cat-main-menu-title{
-    font-size: 5.3rem;
+
     line-height: 2.5rem;
     margin: 0;
     font-size: 2rem;
@@ -20,6 +20,10 @@
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 3px;
+}
+.corp_admin_account_section_id{
+    font-size: 2rem;
+    color: #f3ffd3;
 }
 /*Sub Admin*/
 .cat-sub-menu{
