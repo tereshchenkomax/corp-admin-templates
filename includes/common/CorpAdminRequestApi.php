@@ -9,7 +9,7 @@
 namespace includes\common;
 class CorpAdminRequestApi
 {
-    const CORPADMIN_API = "https://api.pinterest.com/v1/boards/marticz/home-office/pins/?access_token=";
+    const CORPADMIN_API = "https://api.pinterest.com/v1/boards/marticz/home-office/pins/";
     const CORPADMIN_TOKEN = "AQ6JbH3UlMbdjl-qPXGTCB4vsRItFKNGcD8gRBZDyWe0SoA2CgAAAAA";
     private static $instance = null;
 
@@ -27,7 +27,7 @@ class CorpAdminRequestApi
     }
 
     public function getToken(){
-        return "&token=".self::CORPADMIN_TOKEN;
+        return "?access_token=".self::CORPADMIN_TOKEN;
     }
 
     public function getPinterest()

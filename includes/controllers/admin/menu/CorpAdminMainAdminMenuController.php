@@ -9,10 +9,15 @@
 namespace includes\controllers\admin\menu;
 use includes\common\CorpAdminRequestApi;
 use includes\models\site\CorpAdminSampleShortcodesModel;
+use includes\models\admin\menu\CorpAdminMainAdminMenuModel;
 
 class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
 {
-
+    public $model;
+    public function __construct(){
+        parent::__construct();
+        $this->model = CorpAdminMainAdminMenuModel::newInstance();
+    }
     public function action()
     {
         // TODO: Implement action() method.
@@ -61,15 +66,14 @@ class CorpAdminMainAdminMenuController extends CorpAdminAdminMenuController
                     .'<a href="https://github.com/tereshchenkomax/corp-admin-templates" target="_blank">Github</a>.
 		</h3>';
 
-        echo 'Pinterest Test';
-        $requestAPI = CorpAdminRequestApi::getInstance();
-        $pins = $requestAPI->getPinterest();
-        var_dump($pins['url']);
-        echo '<ul>';
-        foreach( $pins['data'] as $pin ) {
-            echo '<li><a href="' . $pin['url'] . '">' . $pin['note']. '</a></li>';
-        }
-        echo '</ul>';
+        $pathView = CORPADMINTEMPLATES_PlUGIN_DIR."/includes/views/admin/menu/CorpAdminMainAdminMenu.view.php";
+        $this->loadView($pathView);
+
+//        echo 'Pinterest Test';
+//        $requestAPI = CorpAdminRequestApi::getInstance();
+//        $pins = $requestAPI->getPinterest();
+//        var_dump($pins['data']);
+
     }
 
     public static function newInstance()
