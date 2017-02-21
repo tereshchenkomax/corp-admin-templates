@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: corp-admin-templates\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-16 22:52+0200\n"
+"POT-Creation-Date: 2017-02-21 23:45+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: tereshchenkomax <tereshchenkomax@gmail.com>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: corp-admin-templates.php:38
 msgid "Admin Color Scheme"
-msgstr ""
+msgstr "Цветовая схема текста"
 
 #: includes/controllers/admin/menu/CorpAdminAdminMenuController.php:36
 #, php-format
@@ -40,34 +40,11 @@ msgctxt "admin menu page"
 msgid "Corp Admin Templates"
 msgstr "Корп Шаблоны Админ-панели"
 
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:61
-msgid "Corp Admin Templates"
-msgstr "Корп Шаблоны Админ-панели"
-
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:64
-msgctxt "admin menu page"
-msgid "This my first plugin"
-msgstr "Это мой первый плагин"
-
-#: includes/controllers/admin/menu/CorpAdminMainAdminMenuController.php:65
-msgctxt "admin menu page"
-msgid "Check it on"
-msgstr "Зацените"
-
-#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:21
-#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:26
+#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:18
+#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:23
 msgctxt "admin sub menu page"
 msgid "Sub Corp Admin Templates"
 msgstr "Подменю Корп Шаблоны Админ-панели"
-
-#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:38
-msgid "Sub Corp Admin Templates"
-msgstr "Подменю Корп Шаблоны Админ-панели"
-
-#: includes/controllers/admin/menu/CorpAdminMainAdminSubMenuController.php:41
-msgctxt "admin sub menu page"
-msgid "The submenu text"
-msgstr "Текст подменю"
 
 #: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:19
 #: includes/controllers/admin/menu/CorpAdminMyPluginsMenuController.php:20
@@ -82,22 +59,72 @@ msgstr "Привет это CORPADMINTEMPLATES страница Плагины"
 msgid "Hello"
 msgstr "Приветики 11"
 
-#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:42
+#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:35
 msgid "Settings"
 msgstr "Настройки"
 
 #: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:43
-msgctxt "admin menu page"
-msgid "This is the 1st options section. Have fun"
-msgstr "Это первый раздел Параметры. Веселитесь"
-
-#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:50
 msgid "Token"
 msgstr "Токен"
 
-#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:57
+#: includes/models/admin/menu/CorpAdminMainAdminMenuModel.php:50
 msgid "Wish to plugin creator"
 msgstr "Пожелание создателю плагина"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:2
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenuAdd.view.php:4
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenuEdit.view.php:7
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:9
+msgid "Name"
+msgstr "Имя"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:12
+msgid "Messsage"
+msgstr "Сообщение"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:15
+msgid "Date"
+msgstr "Дата"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:18
+msgid "Actions"
+msgstr "Действия"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:39
+msgid "Edit"
+msgstr "Редактировать"
+
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:42
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/views/admin/menu/CorpAdminMainAdminMenu.view.php:2
+msgid "Corp Admin Templates"
+msgstr "Корп Шаблоны Админ-панели"
+
+#: includes/views/admin/menu/CorpAdminMainAdminMenu.view.php:5
+msgctxt "admin menu page"
+msgid "This my first plugin"
+msgstr "Это мой первый плагин"
+
+#: includes/views/admin/menu/CorpAdminMainAdminMenu.view.php:6
+msgctxt "admin menu page"
+msgid "Check it on"
+msgstr "Зацените"
+
+#~ msgid "Sub Corp Admin Templates"
+#~ msgstr "Подменю Корп Шаблоны Админ-панели"
+
+#~ msgctxt "admin sub menu page"
+#~ msgid "The submenu text"
+#~ msgstr "Текст подменю"
+
+#~ msgctxt "admin menu page"
+#~ msgid "This is the 1st options section. Have fun"
+#~ msgstr "Это первый раздел Параметры. Веселитесь"
 
 #~ msgid "Account"
 #~ msgstr "Аккаунт"

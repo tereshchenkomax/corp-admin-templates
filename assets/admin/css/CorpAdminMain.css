@@ -26,9 +26,13 @@
     color: #f3ffd3;
 }
 /*Sub Admin*/
-.cat-sub-menu{
-    text-align: left;
+#guest-book-head{
+    text-align: center;
+    margin: 20px auto;
 }
-.cat-sub-menu-title{
-    text-align: left;
-}
+/*.cat-sub-menu{*/
+    /*text-align: left;*/
+/*}*/
+/*.cat-sub-menu-title{*/
+    /*text-align: left;*/
+/*}*/

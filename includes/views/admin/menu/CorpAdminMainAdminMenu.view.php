@@ -9,8 +9,8 @@ echo '<div class="cat-main-menu">';
 ?>
 <form action="options.php" method="POST">
     <?php
-    settings_fields( 'CorpAdminSettings' );     // скрытые защитные поля
-    do_settings_sections( 'corp-admin-templates' ); // секции с настройками (опциями). У нас она всего одна 'section_id'
+    settings_fields( 'CorpAdminSettings' );
+    do_settings_sections( 'corp-admin-templates' );
     submit_button();
     ?>
 </form>

@@ -3,6 +3,8 @@
 namespace includes;
 
 use includes\common\CorpAdminLoader;
+use includes\common\CorpAdminDefaultOption;
+use includes\models\admin\menu\CorpAdminGuestBookSubMenuModel;
 
 class CorpAdminTemplates
 {
@@ -24,6 +26,8 @@ class CorpAdminTemplates
     {
         // debug.log
         error_log('plugin '.CORPADMINTEMPLATES_PlUGIN_NAME.' activation');
+        //таблица гостевой
+        CorpAdminGuestBookSubMenuModel::createTable();
     }
 
     static public function deactivation()
