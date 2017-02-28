@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: corp-admin-templates\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-02-21 23:45+0200\n"
+"POT-Creation-Date: 2017-02-28 22:48+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: tereshchenkomax <tereshchenkomax@gmail.com>\n"
@@ -22,10 +22,10 @@ msgstr ""
 "_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;"
 "__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: corp-admin-templates.php:38
+#: corp-admin-templates.php:39
 msgid "Admin Color Scheme"
 msgstr "Цветовая схема текста"
 
@@ -55,6 +55,122 @@ msgstr "Sub плагинов Corp Административные шаблон�
 msgid "Hello this is CORPADMINTEMPLATES page Plugins "
 msgstr "Привет это CORPADMINTEMPLATES страница Плагины"
 
+#: includes/controllers/site/shortcodes/CorpAdminGuestBookShortcodeController.php:31
+msgid "User name"
+msgstr ""
+
+#: includes/controllers/site/shortcodes/CorpAdminGuestBookShortcodeController.php:33
+msgid "Message"
+msgstr ""
+
+#: includes/controllers/site/shortcodes/CorpAdminGuestBookShortcodeController.php:35
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:2
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenuAdd.view.php:4
+#: includes/views/admin/menu/CorpAdminGuestBookSubMenuEdit.view.php:7
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/custom_post_type/FoodPostType.php:87
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:124
+msgctxt "taxonomy general name"
+msgid "Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:125
+msgctxt "taxonomy singular name"
+msgid "Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:126
+msgid "Search Genres"
+msgstr "Поиск по Жанрам"
+
+#: includes/custom_post_type/FoodPostType.php:127
+msgid "All Genres"
+msgstr "Все Жанры"
+
+#: includes/custom_post_type/FoodPostType.php:128
+msgid "Parent Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:129
+msgid "Parent Kitchen:"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:130
+msgid "Edit Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:131
+msgid "Update Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:132
+msgid "Add New Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:133
+msgid "New Kitchen Name"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:134
+msgid "Kitchen"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:148
+msgctxt "taxonomy general name"
+msgid "Food type"
+msgstr "Типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:149
+msgctxt "taxonomy singular name"
+msgid "Food type"
+msgstr "Тип блюд"
+
+#: includes/custom_post_type/FoodPostType.php:150
+msgid "Search Food type"
+msgstr "Искать типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:151
+msgid "Popular Food types"
+msgstr "Популярные типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:152
+#: includes/custom_post_type/FoodPostType.php:162
+msgid "Food types"
+msgstr "Типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:155
+msgid "Edit Food type"
+msgstr "Редактировать типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:156
+msgid "Update Food type"
+msgstr "Обновить типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:157
+msgid "Add New Food types"
+msgstr "Добавить новый тип блюда"
+
+#: includes/custom_post_type/FoodPostType.php:158
+msgid "New Food types"
+msgstr "Новые типы блюд"
+
+#: includes/custom_post_type/FoodPostType.php:159
+msgid "Separate food types with commas"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:160
+msgid "Add or remove Food types"
+msgstr ""
+
+#: includes/custom_post_type/FoodPostType.php:161
+msgid "Choose from the most used Food types"
+msgstr ""
+
 #: includes/example/CorpAdminAction.php:17
 msgid "Hello"
 msgstr "Приветики 11"
@@ -71,21 +187,21 @@ msgstr "Токен"
 msgid "Wish to plugin creator"
 msgstr "Пожелание создателю плагина"
 
-#: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:2
-#: includes/views/admin/menu/CorpAdminGuestBookSubMenuAdd.view.php:4
-#: includes/views/admin/menu/CorpAdminGuestBookSubMenuEdit.view.php:7
-msgid "Add"
-msgstr "Добавить"
-
 #: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:9
+#: includes/widgets/CorpAdminGuestBookDashboardWidget.php:74
+#: includes/widgets/CorpAdminGuestBookWidget.php:72
 msgid "Name"
 msgstr "Имя"
 
 #: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:12
+#: includes/widgets/CorpAdminGuestBookDashboardWidget.php:77
+#: includes/widgets/CorpAdminGuestBookWidget.php:75
 msgid "Messsage"
 msgstr "Сообщение"
 
 #: includes/views/admin/menu/CorpAdminGuestBookSubMenu.view.php:15
+#: includes/widgets/CorpAdminGuestBookDashboardWidget.php:80
+#: includes/widgets/CorpAdminGuestBookWidget.php:78
 msgid "Date"
 msgstr "Дата"
 
@@ -114,6 +230,14 @@ msgstr "Это мой первый плагин"
 msgctxt "admin menu page"
 msgid "Check it on"
 msgstr "Зацените"
+
+#: includes/widgets/CorpAdminGuestBookDashboardWidget.php:32
+msgid "Guest book new"
+msgstr ""
+
+#: includes/widgets/CorpAdminGuestBookDashboardWidget.php:41
+msgid "Guest book"
+msgstr ""
 
 #~ msgid "Sub Corp Admin Templates"
 #~ msgstr "Подменю Корп Шаблоны Админ-панели"

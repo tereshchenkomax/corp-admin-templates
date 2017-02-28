@@ -8,28 +8,27 @@
 
 namespace includes\common;
 
+use includes\ajax\CorpAdminAjaxHandler;
 use includes\controllers\admin\menu\CorpAdminAdminMenuController;
 use includes\controllers\admin\menu\CorpAdminMainAdminMenuController;
 use includes\controllers\admin\menu\CorpAdminMainAdminSubMenuController;
 use includes\controllers\admin\menu\CorpAdminMyPluginsMenuController;
 use includes\controllers\site\shortcodes\CorpAdminSampleShortcodeController;
 use includes\controllers\site\shortcodes\CorpAdminShortcodeController;
+use includes\controllers\site\shortcodes\CorpAdminGuestBookShortcodeController;
 use includes\example\CorpAdminAction;
 use includes\example\CorpAdminFilter;
+use includes\widgets\CorpAdminGuestBookDashboardWidget;
 
 class CorpAdminLoader
 {
     private static $instance = null;
 
     private function __construct(){
-        // is_admin() Условный тег. Срабатывает когда показывается админ панель сайта (консоль или любая
-        // другая страница админки).
-        // Проверяем в админке мы или нет
+
         if ( is_admin() ) {
-            // Когда в админке вызываем метод admin()
             $this->admin();
         } else {
-            // Когда на сайте вызываем метод site()
             $this->site();
         }
         $this->all();
@@ -44,33 +43,25 @@ class CorpAdminLoader
         return self::$instance;
     }
 
-    /**
-     * Метод будет срабатывать когда вы находитесь в Админ панеле. Загрузка классов для Админ панели
-     */
     public function admin(){
 
-
         CorpAdminMainAdminMenuController::newInstance();
-
         CorpAdminMainAdminSubMenuController::newInstance();
-
         CorpAdminMyPluginsMenuController::newInstance();
+        CorpAdminGuestBookDashboardWidget::newInstance();
 
     }
 
-    /**
-     * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
-     */
     public function site(){
         CorpAdminSampleShortcodeController::newInstance();
+        CorpAdminGuestBookShortcodeController::newInstance();
 
     }
 
-    /**
-     * Метод будет срабатывать везде. Загрузка классов для Админ панели и Сайта
-     */
     public function all(){
         CorpAdminLocalization::getInstance();
+        CorpAdminAjaxHandler::newInstance();
+
         $CorpAdminAction = CorpAdminAction::newInstance();
        /*$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
        $stepByStepExampleFilter->callMyFilter("Roman");

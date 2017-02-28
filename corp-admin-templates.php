@@ -29,6 +29,7 @@ require_once plugin_dir_path(__FILE__) . '/config-path.php';
 require_once CORPADMINTEMPLATES_PlUGIN_DIR.'/includes/common/CorpAdminAutoload.php';
 require_once CORPADMINTEMPLATES_PlUGIN_DIR.'/includes/CorpAdminTemplates.php';
 
+add_action('widgets_init', create_function('', 'return register_widget("includes\widgets\CorpAdminGuestBookWidget");'));
 
 register_activation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\CorpAdminTemplates' ,  'deactivation' ) );

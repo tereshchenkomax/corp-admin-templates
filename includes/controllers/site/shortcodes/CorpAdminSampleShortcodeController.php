@@ -21,10 +21,7 @@ class CorpAdminSampleShortcodeController extends CorpAdminShortcodeController im
         parent::__construct();
         $this->model = \includes\models\site\CorpAdminSampleShortcodesModel::newInstance();
     }
-    /**
-     * Функция в которой будем добалять шорткоды через функцию add_shortcode( $tag , $func );
-     * @return mixed
-     */
+
     public function initShortcode()
     {
         // TODO: Implement initShortcode() method.
@@ -32,33 +29,9 @@ class CorpAdminSampleShortcodeController extends CorpAdminShortcodeController im
         add_shortcode( 'show-api-data', array(&$this, 'action'));
     }
 
-    /**
-     * Функция обработки шоткода
-     * Функция указанная в параметре $func, получает 3 параметра, каждый из них может быть передан,
-     * а может нет:
-     * $atts(массив)
-     *      Ассоциативный массив атрибутов указанных в шоткоде. По умолчанию пустая строка - атрибуты
-     *      не переданы.
-     *      По умолчанию: ''
-     * $content(строка)
-     *      Текст шоткода, когда используется закрывающая конструкция шотркода: [foo]текст шорткода[/foo]
-     *      По умолчанию: ''
-     * $tag(строка)
-     *      Тег шорткода. Может пригодится для передачи в доп. функции. Пр: если шорткод - [foo],
-     *      то тег будет - foo.
-     *      По умолчанию: текущий тег
-     * @param array $atts
-     * @param string $content
-     * @param string $tag
-     * @return mixed
-     */
     public function action($atts = array(), $content = '', $tag = '')
     {
-        // TODO: Implement action() method.
-        /**
-         * Объединяет атрибуты (параметры) шоткода с известными атрибутами, остаются только известные
-         * атрибуты. Устанавливает значения атрибута по умолчанию, если он не указан.
-         */
+
         $atts = shortcode_atts( array(
             ), $atts, $tag );
         $requestAPI = CorpAdminRequestApi::getInstance();
@@ -69,11 +42,6 @@ class CorpAdminSampleShortcodeController extends CorpAdminShortcodeController im
 
     }
 
-    /**
-     * Функция отвечающа за вывод обработаной информации шорткодом
-     * @param $data
-     * @return mixed
-     */
     public function render($data)
     {
         // TODO: Implement render() method.

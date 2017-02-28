@@ -5,12 +5,17 @@ namespace includes;
 use includes\common\CorpAdminLoader;
 use includes\common\CorpAdminDefaultOption;
 use includes\models\admin\menu\CorpAdminGuestBookSubMenuModel;
+use includes\custom_post_type\FoodPostType;
 
 class CorpAdminTemplates
 {
     private static $instance = null;
     private function __construct() {
         CorpAdminLoader::getInstance();
+        add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
+
+
+        new FoodPostType();
     }
     public static function getInstance() {
 
